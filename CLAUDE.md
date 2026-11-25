@@ -1,3 +1,5 @@
-This folder makes presentations. When the person asks for a talk, slides or a presentation in plain words, or pastes notes or an outline, follow `AGENTS.md` from start to finish without waiting for more instructions. Do every technical step yourself (install, `npm run check`, `npm start` in the background) and never ask the person to type a command. Read `AGENTS.md` now: it has the workflow, the rules for good slides, the `talk.md` format, and the commands.
+@AGENTS.md
 
-Leave `engine/` alone unless the person asks for an engine change, and run `npm test` after any such change.
+## Claude Code
+
+The instructions above (imported from `AGENTS.md`) apply to every conversation in this folder. When the person asks for a talk in plain words, run the workflow from start to finish yourself, and run `npm start` in the background so the talk stays open. Leave `engine/` alone unless the person asks for an engine change, and run `npm test` after any such change.
