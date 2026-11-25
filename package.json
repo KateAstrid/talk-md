@@ -1,5 +1,5 @@
 {
-  "name": "talk-engine",
+  "name": "talk-md",
   "version": "0.1.0",
   "private": true,
   "description": "Write a talk in one Markdown file and present it in the browser, with speaker notes, clicker support and a PDF.",
