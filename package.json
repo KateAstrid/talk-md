@@ -5,8 +5,11 @@
   "description": "Write a talk in one Markdown file and present it in the browser, with speaker notes, clicker support and a PDF.",
   "type": "module",
   "scripts": {
+    "prestart": "node engine/scripts/setup.mjs",
     "start": "vite --open",
+    "precheck": "node engine/scripts/setup.mjs",
     "check": "node engine/scripts/check.mjs",
+    "prepdf": "node engine/scripts/setup.mjs",
     "pdf": "node engine/scripts/pdf.mjs",
     "build": "vite build",
     "test": "node --test engine/tests/format.test.mjs && node engine/tests/browser.test.mjs"

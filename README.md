@@ -16,19 +16,17 @@ No slide app, and no code to write.
 
 ▶ **[Watch: from GitHub to your first talk](docs/getting-started.mp4)** (one minute): download, ask your agent, present.
 
-You need [Node.js](https://nodejs.org) (the LTS version) and an AI coding agent, such as Claude Code, Cursor, GitHub Copilot or Codex.
+You need [Node.js](https://nodejs.org) (the LTS version) and an AI coding agent: Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI or Windsurf.
 
 1. Download this folder: click **Code → Download ZIP** on GitHub and unzip it, or clone it.
 2. Open the folder in your agent.
-3. Tell the agent what the talk is about. For example:
+3. Say what you need, in your own words. For example:
 
-   > Read AGENTS.md. Then make a 10-minute talk for product managers from my notes below. The one thing they should remember is that small releases are safer. Then run the presentation.
-   >
-   > (paste your notes here)
+   > Make a 10-minute talk for product managers. The one thing they should remember is that small releases are safer. Here are my notes: …
 
-The agent installs everything, writes `talk.md`, checks every slide, and opens the talk in your browser.
+That's it. The agent already knows what to do in this folder: it sets everything up, writes the slides and your speaker notes, checks every slide, and opens the talk in your browser. You never type a command.
 
-Want changes? Ask for them in plain words: "make slide 4 shorter", "use the dark theme", "add this photo to the team slide". Put any pictures you want to use in the `media/` folder first.
+**Keep talking to it, like a designer sitting next to you.** "Make slide 4 shorter." "Use the dark theme." "Add this photo to the team slide." "The ending feels flat." The talk stays open in your browser and changes as you watch. Put any pictures you want to use in the `media/` folder.
 
 **The talk will sound like you.** The first time, the agent asks how you like to sound: describe it, or paste something you wrote. It saves your answer in `STYLE.md`. Every time you correct its wording later ("too formal", "I'd never say that"), it adds that to `STYLE.md` too, so each talk sounds more like you. You can also edit `STYLE.md` yourself, starting from `STYLE.example.md`.
 

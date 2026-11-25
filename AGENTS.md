@@ -2,12 +2,21 @@
 
 This folder turns one Markdown file, `talk.md`, into a presentation that runs in the browser. It has speaker notes, clicker support, and a PDF export. The person you are helping may not code. Your job is to write `talk.md` from what they give you, check it, and open it in the browser for them.
 
+## 0. How to behave in this folder
+
+The person will never mention this file. They just say what they want, in plain words: "make a talk about our new feature", "turn these notes into slides", "I'm speaking at a meetup on Friday", or they paste an outline. Treat any message like that as the start of the workflow in section 2, and run it from start to finish without waiting for more instructions.
+
+- **Do every technical step yourself.** Install, check and start the talk on your own. Never ask the person to type a command, open a terminal, or edit a file.
+- **Keep the talk open and live.** Start it once in the background (`npm start`), and leave it running. Every later change to `talk.md` shows up in the open browser tab by itself, so the person watches the talk take shape as you work.
+- **Talk about the talk, not the tooling.** Say what you changed on which slide ("Slide 4 now has the chart"), and skip file names and commands unless they ask.
+- **If the first message is only a greeting or unclear,** answer in one or two friendly sentences: *"Hi! Tell me what your talk is about, who it's for, and how long it should be. Paste any notes you have, and I'll turn them into slides and open them for you."*
+
 **The only files you normally touch:** `talk.md`, and pictures or videos in `media/`. Leave `engine/` alone unless the person asks for a change to the engine itself.
 
-## 1. Set up (once)
+## 1. Set up (do it yourself, quietly)
 
-1. Run `node -v`. It must print v18 or newer. If Node is missing, ask the person to install the LTS version from https://nodejs.org, then continue.
-2. Run `npm install` in this folder.
+1. Run `node -v`. It must print v18 or newer. Only if Node is missing, ask the person to install the LTS version from https://nodejs.org (one click on their side), then continue.
+2. Run `npm install` if `node_modules/` is missing. `npm start`, `npm run check` and `npm run pdf` also install anything missing on their own.
 
 ## 2. Make a talk
 
@@ -19,8 +28,8 @@ When the person asks for a presentation:
 4. **Write `talk.md`.** Follow the format in section 4 and the rules in section 3. Replace the whole example file. A copy of the example stays in `engine/example-talk.md` for reference.
 5. **Put pictures in `media/`.** Use the person's own files. Refer to them by file name, for example `image: team-photo.jpg`. Never invent file names; a slide with a missing picture fails the check.
 6. **Run `npm run check`.** Fix every line marked ✗ and run it again until it says "Ready to present". Lines marked · are tips: follow them when they make sense.
-7. **Run `npm start`.** The talk opens in the browser. Tell the person how to present (section 6).
-8. **Change things on request.** Edit `talk.md`, run `npm run check`, and the open browser tab reloads by itself.
+7. **Start the talk.** Run `npm start` in the background, so it keeps running while you work. It opens the talk in the person's browser. Tell them it's open and how to present (section 6). If it is already running from earlier, leave it: the open tab updates by itself.
+8. **Change things on request.** Edit `talk.md` and run `npm run check`. The open browser tab reloads by itself, so the person sees each change at once.
 9. **Remember how they like to sound.** When the person corrects your wording ("I'd never say it like that", "too formal", "don't use that word"), fix the line, then add the preference to `STYLE.md` as one short rule, and tell them you saved it. That way every later slide and every later talk sounds more like them.
 
 ## 3. Rules for good slides
