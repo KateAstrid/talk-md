@@ -6,7 +6,9 @@ You give your AI agent your notes, your outline or your rough ideas. The agent w
 
 No slide app, and no code to write.
 
-![Every layout, from the example talk](engine/preview.png)
+[![Watch the 45-second demo: talk.md, the live talk and the speaker notes side by side](docs/demo-poster.jpg)](docs/demo.mp4)
+
+â–¶ **[Watch the 45-second demo](docs/demo.mp4)**: click through a talk, change `talk.md` and see the slide update, fix a line in the notes and see it saved.
 
 ## Start with an AI agent (no coding needed)
 
@@ -61,6 +63,10 @@ Every slide has its own address. The number after `#` is the slide number, so `â
 
 `npm run check` and `npm run pdf` use Google Chrome. Without Chrome, run `npx playwright install chromium` once.
 
+## Every layout
+
+![Every layout, from the example talk](engine/preview.png)
+
 ## What's inside
 
 ```
@@ -72,3 +78,7 @@ engine/       the code that turns talk.md into slides
 ```
 
 The engine comes from the decks Kate Astrid builds for her own conference talks. It keeps the ideas that worked on stage: one idea per slide, short words on the slide and the rest spoken, lists that grow one point per click, notes that float above the call, and a check that looks at every slide before you present.
+
+## License
+
+MIT. Use it, change it, and share it; keep the copyright notice in your copy.
