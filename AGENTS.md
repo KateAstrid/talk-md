@@ -23,15 +23,19 @@ When the person asks for a presentation:
 
 ## 3. Rules for good slides
 
-These rules come from how people take in a talk. Follow them unless the person asks otherwise.
+These are general guidelines for slides that are easy to follow. Follow them unless the person asks otherwise.
 
 - **One idea per slide.** People can hold only a few things in mind at once. Split a slide that tries to say two things.
 - **Short words on the slide, the rest out loud.** People learn more when the speaker says the words than when they read them on screen. The title says the point in under 70 characters. Everything else goes into the notes.
 - **At most five points on a list.** Use `reveal: yes` when the points should appear one by one.
 - **Vary the layouts.** Two slides in a row with the same layout feel repetitive. The check flags this.
-- **Write notes the way people talk.** Short sentences, everyday words, one idea each. Write them for the ear: the speaker reads them aloud.
+- **Write notes in the speaker's own voice.** The speaker reads them aloud, so they should sound like that person talking. Learn the voice from the person's own writing or from `STYLE.md` (below). Without either, use plain, spoken sentences.
 - **Use only real facts.** Take numbers, quotes, names and stories from the person's material. Never invent them. If a slide needs a fact you do not have, ask, or leave the slide out.
 - **Motion and pictures serve the point.** Add an image, a chart or a video when it shows something the words cannot.
+
+### The speaker's own style
+
+If this folder has a `STYLE.md`, follow it for every word in `talk.md`: the slides and the notes. It holds the person's own preferences, such as tone, words to use or avoid, and how formal to be. Its rules win over the guidelines above. To start one, copy `STYLE.example.md` to `STYLE.md` and fill it in with the person.
 
 ## 4. The talk.md format
 

@@ -24,6 +24,8 @@ The agent installs everything, writes `talk.md`, checks every slide, and opens t
 
 Want changes? Ask for them in plain words: "make slide 4 shorter", "use the dark theme", "add this photo to the team slide". Put any pictures you want to use in the `media/` folder first.
 
+Want the slides and notes to sound like you? Copy `STYLE.example.md` to `STYLE.md` and write down your tone and the words you like or avoid. The agent follows it every time.
+
 ## Start by hand
 
 ```bash
@@ -65,6 +67,7 @@ Every slide has its own address. The number after `#` is the slide number, so `â
 talk.md       the whole talk: slides and speaker notes
 media/        your pictures and videos
 AGENTS.md     instructions for AI agents
+STYLE.md      optional: your own tone and words (start from STYLE.example.md)
 engine/       the code that turns talk.md into slides
 ```
 
