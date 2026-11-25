@@ -14,12 +14,14 @@ This folder turns one Markdown file, `talk.md`, into a presentation that runs in
 When the person asks for a presentation:
 
 1. **Collect what you need.** Use what they already gave you: text, notes, an outline, links, pictures. Ask at most three short questions, and only for things you cannot guess: who the audience is, how long the talk is, and the one idea people should remember. When something is missing, pick a sensible default and say which one you picked.
-2. **Plan the talk.** Allow about one slide per 30 to 45 seconds of speaking. A 10-minute talk has roughly 15 to 20 slides. Give it a shape: an opening, a few main ideas with one slide each, and a close.
-3. **Write `talk.md`.** Follow the format in section 4 and the rules in section 3. Replace the whole example file. A copy of the example stays in `engine/example-talk.md` for reference.
-4. **Put pictures in `media/`.** Use the person's own files. Refer to them by file name, for example `image: team-photo.jpg`. Never invent file names; a slide with a missing picture fails the check.
-5. **Run `npm run check`.** Fix every line marked ✗ and run it again until it says "Ready to present". Lines marked · are tips: follow them when they make sense.
-6. **Run `npm start`.** The talk opens in the browser. Tell the person how to present (section 6).
-7. **Change things on request.** Edit `talk.md`, run `npm run check`, and the open browser tab reloads by itself.
+2. **Learn their voice.** If there is a `STYLE.md`, read it and follow it. If there is none, ask once, in the same message as your other questions: *"How do you like to sound on stage? Describe it in a sentence, or paste something you wrote, and I'll save it as your style so every talk sounds like you. Or say 'skip'."* Turn the answer into a few short rules in `STYLE.md` (start from `STYLE.example.md`), show them to the person, and keep going. If they skip, use plain, spoken sentences.
+3. **Plan the talk.** Allow about one slide per 30 to 45 seconds of speaking. A 10-minute talk has roughly 15 to 20 slides. Give it a shape: an opening, a few main ideas with one slide each, and a close.
+4. **Write `talk.md`.** Follow the format in section 4 and the rules in section 3. Replace the whole example file. A copy of the example stays in `engine/example-talk.md` for reference.
+5. **Put pictures in `media/`.** Use the person's own files. Refer to them by file name, for example `image: team-photo.jpg`. Never invent file names; a slide with a missing picture fails the check.
+6. **Run `npm run check`.** Fix every line marked ✗ and run it again until it says "Ready to present". Lines marked · are tips: follow them when they make sense.
+7. **Run `npm start`.** The talk opens in the browser. Tell the person how to present (section 6).
+8. **Change things on request.** Edit `talk.md`, run `npm run check`, and the open browser tab reloads by itself.
+9. **Remember how they like to sound.** When the person corrects your wording ("I'd never say it like that", "too formal", "don't use that word"), fix the line, then add the preference to `STYLE.md` as one short rule, and tell them you saved it. That way every later slide and every later talk sounds more like them.
 
 ## 3. Rules for good slides
 

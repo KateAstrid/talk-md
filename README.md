@@ -24,7 +24,7 @@ The agent installs everything, writes `talk.md`, checks every slide, and opens t
 
 Want changes? Ask for them in plain words: "make slide 4 shorter", "use the dark theme", "add this photo to the team slide". Put any pictures you want to use in the `media/` folder first.
 
-Want the slides and notes to sound like you? Copy `STYLE.example.md` to `STYLE.md` and write down your tone and the words you like or avoid. The agent follows it every time.
+**The talk will sound like you.** The first time, the agent asks how you like to sound: describe it, or paste something you wrote. It saves your answer in `STYLE.md`. Every time you correct its wording later ("too formal", "I'd never say that"), it adds that to `STYLE.md` too, so each talk sounds more like you. You can also edit `STYLE.md` yourself, starting from `STYLE.example.md`.
 
 ## Start by hand
 
