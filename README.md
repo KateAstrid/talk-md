@@ -1,43 +1,71 @@
 # talk-md
 
-Write your talk in one text file. Present it in the browser.
+**Your notes in. A talk out.**
 
-You give your AI agent your notes, your outline or your rough ideas. The agent writes the slides and the speaker notes into one file, `talk.md`, and opens the talk in your browser. You present it with a clicker, read your notes in a small window that floats above your video call, and fix a sentence in your notes while you rehearse. The fix saves straight into the file.
+Tell your AI agent what your talk is about, in your own words. It writes the slides and your speaker notes, checks every slide, and opens the talk in your browser. Then you keep talking to it until the talk feels right.
 
-No slide app, and no code to write.
-
-[![Watch the 45-second demo: talk.md, the live talk and the speaker notes side by side](docs/demo-poster.jpg)](docs/demo.mp4)
-
-▶ **[Watch the 45-second demo](docs/demo.mp4)**: click through a talk, change `talk.md` and see the slide update, fix a line in the notes and see it saved.
-
-## Start with an AI agent (no coding needed)
+No slide app. No code. One text file you own.
 
 [![Watch: from GitHub to your first talk in one minute](docs/getting-started-poster.jpg)](docs/getting-started.mp4)
 
-▶ **[Watch: from GitHub to your first talk](docs/getting-started.mp4)** (one minute): download, ask your agent, present.
+▶ **[Watch: from GitHub to your first talk](docs/getting-started.mp4)** · 1 minute
 
-You need [Node.js](https://nodejs.org) (the LTS version) and an AI coding agent: Claude Code, Codex, Cursor, GitHub Copilot, Gemini CLI or Windsurf.
+---
 
-1. Download this folder: click **Code → Download ZIP** on GitHub and unzip it, or clone it.
-2. Open the folder in your agent.
-3. Say what you need, in your own words. For example:
+## Why talk-md
+
+**Just say what you need.** "Make a 10-minute talk for product managers. Here are my notes." That's the whole instruction. The agent sets everything up, writes the talk, and keeps it open in your browser while it works, like a designer sitting next to you. "Make slide 4 shorter." "Use the dark theme." "The ending feels flat." You watch each change appear on screen.
+
+**Slides people can follow.** One idea per slide, a short title, and the rest said out loud. That's how audiences take in a talk best, so the agent writes it that way by default. Lists can grow one point per click, and there are 13 layouts and 3 themes to choose from.
+
+**Notes that work on stage.** Press N and your speaker notes open in a small window that floats above everything else, even your video call. Park it under your camera, share only the slides, and read your next line while you look people in the eye. The notes follow every click and show what comes next.
+
+**Fix your notes while you rehearse.** A sentence sounds off out loud? Click into the notes, retype it, and click away. It saves straight into your talk, so the next rehearsal starts from the better version.
+
+[![Watch: fixing a line in the notes while you rehearse](docs/notes-edit-poster.jpg)](docs/notes-edit.mp4)
+
+▶ **[Watch: fix a line while you rehearse](docs/notes-edit.mp4)** · 18 seconds
+
+**It sounds like you.** The first time, the agent asks how you like to sound: describe it, or paste something you wrote. Every time you correct its wording later, it remembers. Your style lives in `STYLE.md` and carries over to your next talk.
+
+**Checked before you present.** One check opens every slide and catches text that overflows, pictures that are missing, and two slides in a row that look the same.
+
+**Yours, in one file.** The whole talk is `talk.md`: easy to keep, copy, share and track in git. Export a PDF for the organisers, or publish the talk as a website with one link.
+
+---
+
+## Get started (no coding needed)
+
+You need [Node.js](https://nodejs.org) (the LTS version) and an AI coding agent.
+
+1. **Download** this folder: click **Code → Download ZIP** above and unzip it, or clone it.
+2. **Open the folder** in your agent.
+3. **Say what you need**, in your own words:
 
    > Make a 10-minute talk for product managers. The one thing they should remember is that small releases are safer. Here are my notes: …
 
-That's it. The agent already knows what to do in this folder: it sets everything up, writes the slides and your speaker notes, checks every slide, and opens the talk in your browser. You never type a command.
+That's it. The agent already knows what to do in this folder, so you never type a command. Put any pictures you'd like to use in the `media/` folder.
 
-**Keep talking to it, like a designer sitting next to you.** "Make slide 4 shorter." "Use the dark theme." "Add this photo to the team slide." "The ending feels flat." The talk stays open in your browser and changes as you watch. Put any pictures you want to use in the `media/` folder.
+## Works with your agent
 
-**The talk will sound like you.** The first time, the agent asks how you like to sound: describe it, or paste something you wrote. It saves your answer in `STYLE.md`. Every time you correct its wording later ("too formal", "I'd never say that"), it adds that to `STYLE.md` too, so each talk sounds more like you. You can also edit `STYLE.md` yourself, starting from `STYLE.example.md`.
+talk-md ships the instruction file each agent looks for, so it knows what to do the moment you open the folder. Each one is set up the way that agent's own documentation describes.
 
-## Start by hand
+| Agent | Reads |
+| --- | --- |
+| Claude Code | `CLAUDE.md`, which imports `AGENTS.md` |
+| OpenAI Codex | `AGENTS.md` |
+| Cursor | `.cursor/rules/talk-md.mdc` and `AGENTS.md` |
+| GitHub Copilot | `.github/copilot-instructions.md` and `AGENTS.md` |
+| Gemini CLI | `GEMINI.md`, which imports `AGENTS.md` |
+| Windsurf | `AGENTS.md` |
 
-```bash
-npm install
-npm start
-```
+All the real instructions live in one place, `AGENTS.md`: the workflow, the rules for good slides, and the `talk.md` format.
 
-`npm start` opens the example talk. Edit `talk.md`, save, and the browser shows the change. `AGENTS.md` explains the format and every layout.
+## See how it works
+
+[![Watch: talk.md, the live talk and the speaker notes side by side](docs/demo-poster.jpg)](docs/demo.mp4)
+
+▶ **[Watch the tour](docs/demo.mp4)** · 45 seconds: click through a talk, change `talk.md` and watch the slide update, fix a line in the notes, run the check.
 
 ## Presenting
 
@@ -49,11 +77,23 @@ npm start
 | Full screen | F |
 | First or last slide | Home or End |
 
-The **speaker notes** open in a small window that stays on top of every other window (in Chrome). On a video call, drag it right under your camera and share only the tab with the slides. The notes show what to say on this slide and a preview of the next one. Click into the text to fix a sentence; it saves into `talk.md` when you click away.
+On a video call, drag the notes window right under your camera and share only the tab with the slides. Every slide has its own address: `…/#7` opens slide 7, which is handy for questions afterwards.
 
-Every slide has its own address. The number after `#` is the slide number, so `…/#7` opens slide 7.
+## Every layout
 
-## Commands
+Cover, statement, text, list, split, full picture, quote, compare, code, video, chart, big number and closing:
+
+![Every layout, from the example talk](engine/preview.png)
+
+## Start by hand
+
+Prefer to write `talk.md` yourself?
+
+```bash
+npm start
+```
+
+That opens the example talk, installing anything it needs the first time. Edit `talk.md`, save, and the browser shows the change. `AGENTS.md` explains the format and every layout.
 
 | Command | What it does |
 | --- | --- |
@@ -65,21 +105,19 @@ Every slide has its own address. The number after `#` is the slide number, so `�
 
 `npm run check` and `npm run pdf` use Google Chrome. Without Chrome, run `npx playwright install chromium` once.
 
-## Every layout
-
-![Every layout, from the example talk](engine/preview.png)
-
 ## What's inside
 
 ```
 talk.md       the whole talk: slides and speaker notes
 media/        your pictures and videos
+STYLE.md      your tone and words, made with you on first use
 AGENTS.md     instructions for AI agents
-STYLE.md      optional: your own tone and words (start from STYLE.example.md)
 engine/       the code that turns talk.md into slides
 ```
 
-The engine comes from the decks Kate Astrid builds for her own conference talks. It keeps the ideas that worked on stage: one idea per slide, short words on the slide and the rest spoken, lists that grow one point per click, notes that float above the call, and a check that looks at every slide before you present.
+## Where it comes from
+
+talk-md is the engine behind [Kate Astrid](https://kate-astrid.com)'s conference talks, cleaned up so anyone can use it. It keeps the ideas that worked on stage: one idea per slide, short words on the slide and the rest spoken, lists that grow one point per click, notes that float above the call, and a check that looks at every slide before the talk.
 
 ## License
 
