@@ -8,7 +8,7 @@ No slide app. No code. One text file you own.
 
 [![Watch: from GitHub to your first talk in one minute](docs/getting-started-poster.jpg)](docs/getting-started.mp4)
 
-▶ **[Watch: from GitHub to your first talk](docs/getting-started.mp4)** · 1 minute
+▶ **[Watch: from GitHub to your first talk](docs/getting-started.mp4)** · 1 minute: download, ask, present, and fix a line in the notes
 
 ---
 
@@ -18,19 +18,19 @@ No slide app. No code. One text file you own.
 
 **Slides people can follow.** One idea per slide, a short title, and the rest said out loud. That's how audiences take in a talk best, so the agent writes it that way by default. Lists can grow one point per click, and there are 13 layouts and 3 themes to choose from.
 
+**Your clicker just works.** Bring the presentation clicker you already own. Its next and back buttons move the slides, and so do the arrow keys, the space bar and a click.
+
 **Notes that work on stage.** Press N and your speaker notes open in a small window that floats above everything else, even your video call. Park it under your camera, share only the slides, and read your next line while you look people in the eye. The notes follow every click and show what comes next.
 
-**Fix your notes while you rehearse.** A sentence sounds off out loud? Click into the notes, retype it, and click away. It saves straight into your talk, so the next rehearsal starts from the better version.
-
-[![Watch: fixing a line in the notes while you rehearse](docs/notes-edit-poster.jpg)](docs/notes-edit.mp4)
-
-▶ **[Watch: fix a line while you rehearse](docs/notes-edit.mp4)** · 18 seconds
+**Fix your notes while you rehearse.** A sentence sounds off out loud? Click into the notes, retype it, and click away. It saves straight into your talk, so the next rehearsal starts from the better version. The video above shows it at the end.
 
 **It sounds like you.** The first time, the agent asks how you like to sound: describe it, or paste something you wrote. Every time you correct its wording later, it remembers. Your style lives in `STYLE.md` and carries over to your next talk.
 
 **Checked before you present.** One check opens every slide and catches text that overflows, pictures that are missing, and two slides in a row that look the same.
 
-**Yours, in one file.** The whole talk is `talk.md`: easy to keep, copy, share and track in git. Export a PDF for the organisers, or publish the talk as a website with one link.
+**A PDF when you need one.** The organisers want your slides? Ask your agent: "Can I get a PDF of my talk?" It makes one, one page per slide, and tells you where it saved it. No command to learn.
+
+**Yours, in one file.** The whole talk is `talk.md`: easy to keep, copy, share and track in git. Ask your agent to put the talk online, and it becomes a website with one link.
 
 ---
 
@@ -44,7 +44,7 @@ You need [Node.js](https://nodejs.org) (the LTS version) and an AI coding agent.
 
    > Make a 10-minute talk for product managers. The one thing they should remember is that small releases are safer. Here are my notes: …
 
-That's it. The agent already knows what to do in this folder, so you never type a command. Put any pictures you'd like to use in the `media/` folder.
+That's it. The agent already knows what to do in this folder, so you never type a command. Later, just ask for what you need: "make slide 3 shorter", "switch to the dark theme", "give me a PDF for the organisers". Put any pictures you'd like to use in the `media/` folder.
 
 ## Works with your agent
 
@@ -71,8 +71,8 @@ All the real instructions live in one place, `AGENTS.md`: the workflow, the rule
 
 | Do this | Press |
 | --- | --- |
-| Next slide | → , space, a click, or your clicker |
-| Previous slide | ← |
+| Next slide | → , space, a click, or your clicker's next button |
+| Previous slide | ← or your clicker's back button |
 | Speaker notes | N |
 | Full screen | F |
 | First or last slide | Home or End |
@@ -87,7 +87,7 @@ Cover, statement, text, list, split, full picture, quote, compare, code, video, 
 
 ## Start by hand
 
-Prefer to write `talk.md` yourself?
+You never need these commands: your agent runs them for you. They're here if you'd rather write `talk.md` yourself.
 
 ```bash
 npm start

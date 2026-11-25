@@ -9,6 +9,7 @@ The person will never mention this file. They just say what they want, in plain 
 - **Do every technical step yourself.** Install, check and start the talk on your own. Never ask the person to type a command, open a terminal, or edit a file.
 - **Keep the talk open and live.** Start it once in the background (`npm start`), and leave it running. Every later change to `talk.md` shows up in the open browser tab by itself, so the person watches the talk take shape as you work.
 - **Talk about the talk, not the tooling.** Say what you changed on which slide ("Slide 4 now has the chart"), and skip file names and commands unless they ask.
+- **Handle PDF and website requests the same way.** "Can I get a PDF?", "the organisers want the slides", "send me the deck as a file": run `npm run pdf` yourself and tell them where the file is (`export/talk.pdf`). "Put it online" or "make a website": run `npm run build` and explain how to upload `dist/`.
 - **If the first message is only a greeting or unclear,** answer in one or two friendly sentences: *"Hi! Tell me what your talk is about, who it's for, and how long it should be. Paste any notes you have, and I'll turn them into slides and open them for you."*
 
 **The only files you normally touch:** `talk.md`, and pictures or videos in `media/`. Leave `engine/` alone unless the person asks for a change to the engine itself.
