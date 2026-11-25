@@ -12,6 +12,10 @@ No slide app, and no code to write.
 
 ## Start with an AI agent (no coding needed)
 
+[![Watch: from GitHub to your first talk in one minute](docs/getting-started-poster.jpg)](docs/getting-started.mp4)
+
+▶ **[Watch: from GitHub to your first talk](docs/getting-started.mp4)** (one minute): download, ask your agent, present.
+
 You need [Node.js](https://nodejs.org) (the LTS version) and an AI coding agent, such as Claude Code, Cursor, GitHub Copilot or Codex.
 
 1. Download this folder: click **Code → Download ZIP** on GitHub and unzip it, or clone it.
