@@ -6,9 +6,9 @@ Tell your AI agent what your talk is about, in your own words. It writes the sli
 
 No slide app. No code. One text file you own.
 
-[![Watch: from GitHub to your first talk in one minute](docs/getting-started-poster.jpg)](docs/getting-started.mp4)
+[![Watch: from GitHub to your first talk in 30 seconds](docs/getting-started-poster.jpg)](docs/getting-started.mp4)
 
-▶ **[Watch: from GitHub to your first talk](docs/getting-started.mp4)** · 1 minute: download, ask, present, and fix a line in the notes
+▶ **[Watch: from GitHub to your first talk](docs/getting-started.mp4)** · 30 seconds: download, ask, present, and fix a line in the notes
 
 ---
 
