@@ -1,0 +1,27 @@
+{
+  "name": "talk-engine",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Write a talk in one Markdown file and present it in the browser, with speaker notes, clicker support and a PDF.",
+  "type": "module",
+  "scripts": {
+    "start": "vite --open",
+    "check": "node engine/scripts/check.mjs",
+    "pdf": "node engine/scripts/pdf.mjs",
+    "build": "vite build",
+    "test": "node --test engine/tests/format.test.mjs && node engine/tests/browser.test.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "vite": "^6.0.0"
+  },
+  "devDependencies": {
+    "pdf-lib": "^1.17.1",
+    "playwright": "^1.49.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
