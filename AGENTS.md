@@ -16,6 +16,8 @@ The person will never mention this file. They just say what they want, in plain 
 
 ## 1. Set up (do it yourself, quietly)
 
+If the person shared the talk-md link and you are not inside this folder yet, run `git clone https://github.com/KateAstrid/talk-md`, move into the new `talk-md` folder, and do everything there. Their first message already says what talk they want, so go on with it.
+
 1. Run `node -v`. It must print v18 or newer. Only if Node is missing, ask the person to install the LTS version from https://nodejs.org (one click on their side), then continue.
 2. Run `npm install` if `node_modules/` is missing. `npm start`, `npm run check` and `npm run pdf` also install anything missing on their own.
 

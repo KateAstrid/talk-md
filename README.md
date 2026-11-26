@@ -6,9 +6,9 @@ Tell your AI agent what your talk is about, in your own words. It writes the sli
 
 No slide app. No code. One text file you own.
 
-[![Watch: from GitHub to your first talk in 30 seconds](docs/getting-started-poster.jpg)](docs/getting-started.mp4)
+[![Watch: from one message to your first talk in 30 seconds](docs/getting-started-poster.jpg)](docs/getting-started.mp4)
 
-▶ **[Watch: from GitHub to your first talk](docs/getting-started.mp4)** · 30 seconds: download, ask, present, and fix a line in the notes
+▶ **[Watch: from one message to your first talk](docs/getting-started.mp4)** · 30 seconds: share the link, present, and fix a line in the notes
 
 ---
 
@@ -36,15 +36,15 @@ No slide app. No code. One text file you own.
 
 ## Get started (no coding needed)
 
-You need [Node.js](https://nodejs.org) (the LTS version) and an AI coding agent.
+You need an AI coding agent, such as Claude Code, Codex, Cursor or Copilot. Open it, share this link, and say what you need, in your own words:
 
-1. **Download** this folder: click **Code → Download ZIP** above and unzip it, or clone it.
-2. **Open the folder** in your agent.
-3. **Say what you need**, in your own words:
+> Set up github.com/KateAstrid/talk-md and make me a 10-minute talk for product managers. The one thing they should remember is that small releases are safer. Here are my notes: …
 
-   > Make a 10-minute talk for product managers. The one thing they should remember is that small releases are safer. Here are my notes: …
+That's it. The agent gets talk-md, sets it up, writes your talk and opens it in your browser, so you never download anything or type a command. Later, just ask for what you need: "make slide 3 shorter", "switch to the dark theme", "give me a PDF for the organisers". Put any pictures you'd like to use in the `media/` folder.
 
-That's it. The agent already knows what to do in this folder, so you never type a command. Later, just ask for what you need: "make slide 3 shorter", "switch to the dark theme", "give me a PDF for the organisers". Put any pictures you'd like to use in the `media/` folder.
+## For AI agents
+
+If someone shared this link with you, clone the repository into a new folder (`git clone https://github.com/KateAstrid/talk-md`), work inside that folder, and follow [`AGENTS.md`](AGENTS.md) from the start. Do every step yourself, and keep the person's request as the talk to make.
 
 ## Works with your agent
 
@@ -90,6 +90,8 @@ Cover, statement, text, list, split, full picture, quote, compare, code, video, 
 You never need these commands: your agent runs them for you. They're here if you'd rather write `talk.md` yourself.
 
 ```bash
+git clone https://github.com/KateAstrid/talk-md
+cd talk-md
 npm start
 ```
 
